@@ -1,6 +1,6 @@
 # code sample for quick sort
 
-def quicksort(array):
+def qsort(array):
     if len(array) < 2:
         # returning the array because base case of elements 0 to 1 are already sorted
         return array
@@ -13,7 +13,7 @@ def quicksort(array):
         # sub-array of all the elements greater than the pivot
         greater = [i for i in array[1:] if i > pivot]
 
-        return quicksort(less) + [pivot] + quicksort(greater)
+        return qsort(less) + [pivot] + qsort(greater)
 
 
-print(quicksort([10, 5, 2, 3, 7, 11, 23]))
+print(qsort([10, 5, 2, 3, 7, 11, 23]))
