@@ -16,4 +16,4 @@ def qsort(array):
         return qsort(less) + [pivot] + qsort(greater)
 
 
-print(qsort([10, 5, 2, 3, 7, 11, 23]))
+print(qsort([0,1,2,0,2,1]))

@@ -1,0 +1,27 @@
+
+we are to look for sets that contain, that do not equal each other and
+return 0 
+
+sort it an then take a first integer. For example '
+
+sorted_numbers = [-3,-3,1,2,3,4]
+
+takes the first integer num[0] check whether the next nummber and the former is the same and skip if its the same
+l and r
+
+
+
+num = [-3, 3, 4, -3, 1, 2]
+
+fn = 0
+l, r = fn+ 1, len(num) -1 
+
+
+while l< r: 
+    two_s = num[l] + num[r]
+    fn = num[0]
+    if num[fn] == num[fn+1]
+        continue 
+    elif ts> num: 
+
+     

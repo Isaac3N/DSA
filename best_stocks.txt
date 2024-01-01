@@ -1,0 +1,23 @@
+prices = [ 7, 1, 5, 3, 6, 4]
+
+l = 0 
+r = len(prices) -1 
+
+dividend = []
+
+check whether the first day price is lower than the last day price
+and if it is lower r comes down by 1. 
+
+
+while l < r: 
+    if prices[l] > prices[r]:
+        l+= 1 
+
+    difference = prices[r] - prices[l]
+
+    dividend.append(difference)
+
+    r-= 1 
+
+    best_time = max(dividend
+    w) 

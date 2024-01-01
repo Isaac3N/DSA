@@ -10,7 +10,7 @@ def binary_search(list, item):
     while low <= high:
         # ... check the middle element
         mid = (low+high)//2
-        mid_int = int(mid)
+        # mid_int = int(mid)
         guess = list[mid]
         # found the item
         if guess == item:
@@ -26,7 +26,7 @@ def binary_search(list, item):
             low = mid + 1
 
             # Item does not exist
-    return None
+    return []
 
 
 my_list = [1, 3, 5, 7, 9]

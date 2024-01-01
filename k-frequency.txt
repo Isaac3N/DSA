@@ -1,0 +1,32 @@
+Given an integer array nums and an integer k, return the k most frequent elements. 
+You may return the answer in any order.
+
+Example 1:
+
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+Example 2:
+
+Input: nums = [1], k = 1
+Output: [1]
+
+
+
+check whether the length of the array, is <2. if it is return the element in the array 
+
+if len(nums)< 2:
+    return nums
+
+create a hashmap, that stores the number as the key and then the amount of time they appear in the array as the value
+
+frequency_map = {}
+
+for num in nums: 
+    frequency_map[num] = frequency_map.get(num, 0) + 1
+
+    check whether the frequency map prints the map of the index and the frequency 
+
+
+write a for that sorts the map and return the len(num) -1
+
+

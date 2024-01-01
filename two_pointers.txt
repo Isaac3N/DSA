@@ -1,0 +1,28 @@
+checking for a valid palindrome using two pointers 
+amanaplanacanalpanama == A man, a plan, a canal: Panama
+
+i want to check whether the length of this is the same as the reverse, if it is not the same return False
+
+
+to find the reverse 
+
+reverse_string = ""
+
+for i in string:
+    reverse_string += i
+
+if len(reverse_string) != len(s):
+    return False 
+
+create a two pointer 
+n = len(s)
+i, j = s[0], s[n]
+
+while i<=j  and j>= i: 
+
+    if j == i 
+        i += 1 
+        j += 1
+    else: 
+        return False r
+    return True 

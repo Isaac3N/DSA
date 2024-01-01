@@ -1,0 +1,39 @@
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
+
+typically using all the original letters exactly once.
+
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+--> check whether they are the same word and if it = exists 
+
+--> sort them first 
+
+loop through both dictionaries,
+
+
+
+
+def anagram(s, t): 
+
+    if len(s) != len(t):
+        return False 
+
+
+    dictS, dictT = {}, {}
+
+    sorted_s = s.sort  #aaagmnr
+
+    sorted_t = t.sort 
+
+    
+
+
+
+
+
+
+

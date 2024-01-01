@@ -1,0 +1,15 @@
+checking for two_sum txt 
+
+nums = [1,2,3,4,5]
+target = 7
+difference = target - nums[i]
+
+return the index values 
+
+two_sum_dict = {}
+
+for index, value in enumerate(nums):
+    difference = target - nums[index]
+    if difference in two_sum_dict: 
+        return (two_sum_dict[difference], index)
+    t
