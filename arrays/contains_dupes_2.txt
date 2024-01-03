@@ -1,0 +1,20 @@
+Given an integer array nums and an integer k, 
+return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+
+from collections import defaultdict
+
+def contains_duplicates(nums, k): 
+    hashmap = defaultdict(list)
+
+    for i in nums: 
+        if nums[i] in hashmap:
+            hashmap[nums[i]] += i
+
+        hashmap[nums[i]] = i
+
+    for value in hashmap.values(): 
+        if len(value) > 2: 
+            if max(value) - min(value) > k: 
+                return True 
+
+    return False 
